@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Manager | Full Stack CRUD</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#/items" class="brand">
+          <svg class="brand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+          </svg>
+          <span>InventoryHub</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#/items" id="nav-all-items" class="nav-link">Browse All Items</a>
+          <a href="#/my-inventory" id="nav-my-inventory" class="nav-link auth-only">My Inventory</a>
+          <a href="#/items/new" id="nav-new-item" class="btn btn-sm btn-primary auth-only">+ New Item</a>
+        </nav>
+
+        <div class="nav-auth" id="nav-auth-container">
+          <!-- Populated dynamically via JS: Login/Register or User info/Logout -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Notification Toast / Banner -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <div id="view-container" class="view-container">
+        <div class="loading-spinner">Loading...</div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>2026 Inventory Hub &bull; Full Stack CRUD Application</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
