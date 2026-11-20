@@ -1,13 +1,8 @@
 {
-  "name": "crud-website",
+  "name": "inventory-hub-crud-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "node --test tests/requirements.test.js",
-    "seed": "node database/seed.js"
-  },
   "keywords": [],
   "type": "commonjs",
   "dependencies": {
